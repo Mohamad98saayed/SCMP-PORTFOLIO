@@ -31,7 +31,8 @@ const swsSchema = Schema({
     },
   ],
   winnerProject: {
-    type: String,
+    type: Schema.Types.ObjectId,
+    ref: "Project",
   },
 });
 

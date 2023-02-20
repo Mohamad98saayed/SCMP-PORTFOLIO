@@ -38,11 +38,15 @@ app.use(fileUpload());
 import userRouter from "./routes/user.js";
 import departmentRouter from "./routes/department.js";
 import eventRouter from "./routes/event.js";
+import swsRouter from "./routes/sws.js";
+import projectRouter from "./routes/project.js";
 
 /* MOUNTING ROUTES */
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/department", departmentRouter);
 app.use("/api/v1/event", eventRouter);
+app.use("/api/v1/sws", swsRouter);
+app.use("/api/v1/project", projectRouter);
 
 //using error middleware in the app
 app.use(errorMiddleware);

@@ -10,6 +10,9 @@ const projectSchema = Schema({
     type: String,
     required: [true, "Please describe the winner project"],
   },
+  winner: {
+    type: Boolean,
+  },
   image: {
     public_id: {
       type: String,
